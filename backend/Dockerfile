@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 5000
 
 # Set the default command to run the app
-CMD ["python", "main.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
