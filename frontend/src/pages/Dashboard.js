@@ -69,7 +69,7 @@ const Dashboard = () => {
 
   const fetchTrafficData = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:5000/live-traffic");
+      const response = await axios.get("https://projectv2-t1gq.onrender.com/live-traffic");
       const data = response.data;
       
       // If an attack is detected (prediction is not BENIGN)

@@ -25,7 +25,7 @@ const History = () => {
     const fetchSavedAttacks = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://127.0.0.1:5000/api/attacks/history', {
+        const response = await axios.get('https://projectv2-t1gq.onrender.com/api/attacks/history', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -56,7 +56,7 @@ const History = () => {
                 if (window.confirm('Are you sure you want to delete this attack record?')) {
                   try {
                     const token = localStorage.getItem('token');
-                    await axios.delete(`http://127.0.0.1:5000/api/attacks/delete/${attack.id}`, {
+                    await axios.delete(`https://projectv2-t1gq.onrender.com/api/attacks/delete/${attack.id}`, {
                       headers: {
                         'Authorization': `Bearer ${token}`
                       }

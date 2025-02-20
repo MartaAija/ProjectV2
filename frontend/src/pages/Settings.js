@@ -19,7 +19,7 @@ const Settings = () => {
       try {
         const token = localStorage.getItem('token');
         
-        const response = await axios.get('http://127.0.0.1:5000/api/user/profile', {
+        const response = await axios.get('https://projectv2-t1gq.onrender.com/api/user/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -49,7 +49,7 @@ const Settings = () => {
   const handleSave = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.put('http://127.0.0.1:5000/api/user/profile', formData, {
+      const response = await axios.put('https://projectv2-t1gq.onrender.com/api/user/profile', formData, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
