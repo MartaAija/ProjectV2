@@ -1,0 +1,1024 @@
+/* App.css */
+
+/* Importing the Titillium Web font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    #121212 0%,
+    #1e1e1e 20%,
+    #2c2c2c 40%,
+    #002333 60%,
+    #003049 80%,
+    #00405f 100%
+  );
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.6;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #00d4ff; /* Bright blue for headings */
+  font-family: "Titillium Web", sans-serif; /* Ensure headings use the same font */
+}
+
+p, ul, li {
+  color: #e0e0e0; /* Light text color for paragraphs and list items */
+  font-family: "Titillium Web", sans-serif; /* Ensure text uses the same font */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0;
+}
+
+/* Style for the login container */
+.login-container {
+  max-width: 450px; /* Slightly wider to accommodate more fields */
+  margin: 50px auto;
+  padding: 40px;
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+.login-container h2 {
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%; /* Ensure full width */
+}
+
+/* Form Labels */
+.form-label {
+  display: block;
+  color: #e0e0e0;
+  font-size: 16px;
+  width: 100px; /* Fixed width for labels */
+  text-align: right; /* Align text to the right */
+  margin-right: 15px; /* Consistent space between label and input */
+}
+
+
+/* Form Inputs */
+.form-input {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #e0e0e0;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #00d4ff;
+}
+
+.form-input::placeholder {
+  color: #888;
+}
+
+/* Login Button */
+.login-button {
+  width: 50%;
+  padding: 10px;
+  background-color: #00d4ff;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+.login-button:hover {
+  background-color: #00b8d9;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 68, 68, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the Home page welcome text */
+.home-container {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 50px 90px 50px 0;
+  text-align: center; /* Center text alignment */
+  color: #e0e0e0; /* Light text color */
+  background-color: rgba(0, 212, 255, 0.1); /* Light blue background */
+  padding: 40px; /* Add padding around the content */
+  border-radius: 10px; /* Rounded corners for the container */
+  animation: fadeIn 1s ease-in; /* Fade-in effect for the container */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Heading styles */
+.home-container h1 {
+  font-size: 42px; /* Increased font size */
+  color: #00d4ff; /* Welcome text color */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  margin-bottom: 20px; /* Space below the heading */
+  animation: slideIn 1s ease-in; /* Slide-in effect for heading */
+}
+
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px); /* Start slightly above */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-container h2 {
+  font-size: 32px; /* Subheading font size */
+  color: #00d4ff; /* Subheading color */
+  margin-top: 30px; /* Space above the subheading */
+  margin-bottom: 10px; /* Space below the subheading */
+  animation: slideIn 1s ease-in; /* Slide-in effect for subheading */
+}
+
+/* Paragraph styles */
+.home-container p {
+  font-size: 20px; /* Increased font size */
+  margin: 10px 0; /* Space above and below paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease-in forwards; /* Fade-in effect for paragraphs */
+  animation-delay: 0.5s; /* Delay for staggered effect */
+}
+
+/* List styles */
+.home-container ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Space above and below the list */
+}
+
+.home-container ul li {
+  background-color: rgba(0, 212, 255, 0.1); /* Light background for list items */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside list items */
+  margin: 5px 0; /* Space between list items */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth background color and transform transition */
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease-in forwards; /* Fade-in effect for list items */
+  animation-delay: 1s; /* Delay for staggered effect */
+}
+
+.home-container ul li:hover {
+  background-color: rgba(0, 212, 255, 0.3); /* Darker background on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* New styles for the animated home container */
+.animated-home {
+  position: relative; /* Positioning for the animation */
+  overflow: hidden; /* Hide overflow for animation effects */
+  animation: fadeIn 1s ease-in; /* Fade-in effect */
+}
+
+/* Adding a moving background effect */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgba(83, 83, 83, 0.9);
+  opacity: 0.5;
+  z-index: -1; /* Behind the content */
+  animation: moveBackground 5s linear infinite; /* Continuous movement */
+}
+
+/* Keyframes for moving background */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.leaf {
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.left-leaf {
+  transform: rotate(-30deg);
+  animation: floatLeft 4s ease-in-out infinite;
+}
+
+.right-leaf {
+  transform: rotate(30deg);
+  animation: floatRight 4s ease-in-out infinite;
+}
+
+@keyframes floatLeft {
+  0% {
+    transform: rotate(-30deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(-35deg) translate(-8px, -8px);
+  }
+  50% {
+    transform: rotate(-25deg) translate(-15px, -10px);
+  }
+  75% {
+    transform: rotate(-32deg) translate(-5px, -12px);
+  }
+  100% {
+    transform: rotate(-30deg) translate(0, 0);
+  }
+}
+
+@keyframes floatRight {
+  0% {
+    transform: rotate(30deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(35deg) translate(8px, -8px);
+  }
+  50% {
+    transform: rotate(65deg) translate(15px, -10px);
+  }
+  75% {
+    transform: rotate(32deg) translate(5px, -12px);
+  }
+  100% {
+    transform: rotate(30deg) translate(0, 0);
+  }
+}
+
+/* Optional hover effect */
+.logo-section:hover .left-leaf {
+  animation: floatLeft 1.5s ease-in-out infinite;
+}
+
+.logo-section:hover .right-leaf {
+  animation: floatRight 1.5s ease-in-out infinite;
+}
+
+.logo {
+  width: 400px; /* Smaller width for the logo */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar.css */
+/* Navbar Styling */
+.navbar {
+  width: 150px;
+  height: 100vh;
+  background-color: #494949;
+  color: #e0e0e0;
+  position: fixed;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  box-shadow: 2px 0px 10px rgba(27, 27, 27, 0.8);
+}
+
+.navbar.shrunk {
+  width: 25px;
+  box-shadow: none;
+}
+
+.navbar button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #00d4ff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar h2 {
+  color: #00d4ff;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar.shrunk h2 {
+  color: transparent;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #e0e0e0;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar.shrunk ul li {
+  color: transparent;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: #00d4ff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Navbar Footer Styling */
+.navbar-footer {
+  margin-top: auto; /* Push the footer to the bottom of the navbar */
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Smaller font size for copyright */
+  color: #b0b0b0; /* Lighter text color for footer */
+}
+
+.navbar-footer p {
+  margin-bottom: 20px;
+}
+
+
+/* Style for the container */
+.signup-container {
+  max-width: 400px; /* Max width of the container */
+  margin: 50px auto; /* Centering the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for modern look */
+}
+
+/* Heading */
+.signup-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error message */
+.signup-container p {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Form layout */
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input styling */
+.signup-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Make sure the inputs fill the container */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focused input styling */
+.signup-container input:focus {
+  border-color: #00d4ff; /* Blue focus border */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Soft shadow for focus */
+}
+
+/* Placeholder text styling */
+.signup-container input::placeholder {
+  color: #bbb; /* Light placeholder text */
+}
+
+/* Button styling */
+.signup-container button {
+  padding: 12px;
+  background-color: #00d4ff; /* Blue background for button */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make sure the button fits the container */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Hover effect for button */
+.signup-container button:hover {
+  background-color: #59e3ff; /* Darker blue on hover */
+}
+
+/* Adjustments for smaller inputs */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+  width: 100%; /* Ensure all inputs stretch to fill the container */
+}
+
+.signup-container input[type="text"]:last-child {
+  width: 100%;
+}
+
+.signup-container button[type="submit"] {
+  width: 100%; /* Make the submit button full-width */
+}
+
+/* Compliance Page Styles */
+.compliance-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.compliance-card {
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.compliance-card h2 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.compliance-card p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.compliance-card a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.compliance-card a:hover {
+  color: #00b8d9;
+  text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.attack-education {
+  padding: 20px;
+}
+
+.attack-list {
+  margin-bottom: 20px;
+}
+
+.attack-info {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.attack-information {
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0; /* Light text color */
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.attack-info {
+  background-color: #333; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.attack-info.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2, h3 {
+  color: #00d4ff; /* Bright blue for headings */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.attack-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.attack-card {
+  background-color: #333; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.attack-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.attack-list {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0;
+}
+
+
+.attack-list-item {
+  background-color: rgba(0, 212, 255, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.attack-list-item:hover {
+  background-color: rgba(89, 227, 255, 0.4); 
+}
+
+@keyframes attackFlash {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+.attack-detected {
+  animation: attackFlash 3s ease-out;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #00d4ff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+    background-color: #00b8d9;
+}
+
+/* Save and Cancel Buttons */
+.save-button {
+    background-color: #00d4ff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+.save-button:hover {
+    background-color: #00b8d9;
+}
+
+.cancel-button {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+    background-color: #555;
+}
+
+/* Input Fields */
+.settings-input {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+    margin-left: 10px;
+    width: 200px;
+    transition: border-color 0.2s;
+}
+
+.settings-input:focus {
+    outline: none;
+    border-color: #00d4ff;
+}
+
+.settings-input:disabled {
+    background-color: #333;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Input Labels */
+.settings-label {
+    display: inline-block;
+    width: 100px;
+    color: #ddd;
+}
+
+/* Input Container */
+.input-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Sign Up Link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #e0e0e0;
+}
+
+.signup-link a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.signup-link a:hover {
+  color: #00b8d9;
+  text-decoration: underline;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+  text-align: center;
+  margin-top: 20px; /* Increased from 10px to match signup-link */
+  color: #e0e0e0;
+}
+
+.forgot-password-link a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password-link a:hover {
+  color: #00b8d9;
+  text-decoration: underline;
+}
+
+/* Logout Page Styles */
+.logout-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.logout-container h1 {
+  color: #00d4ff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.logout-container p {
+  color: #e0e0e0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.logout-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logout-link {
+  padding: 10px 20px;
+  background-color: #00d4ff;
+  color: #121212;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.logout-link:hover {
+  background-color: #00b8d9;
+}
+
+
+/* History Page Styling */
+.history-container {
+  color: #e0e0e0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.history-container h1 {
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.history-card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.history-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.history-card h3 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.history-card p {
+  margin: 8px 0;
+  color: #e0e0e0;
+}
+
+.history-card strong {
+  color: #00d4ff;
+}
+
+/* Delete Button Styling */
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 59, 59, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff3b3b;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+  background: rgba(255, 59, 59, 0.4);
+}
+
+/* Recommendations Styling */
+.recommendations {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.recommendation-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recommendation-item span {
+  color: #e0e0e0;
+}
+
+.recommendation-item span:last-child {
+  color: #00d4ff;
+}
+
+/* Feature Importance Styling */
+.feature-importance {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.feature-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-item strong {
+  color: #e0e0e0;
+}
+
+.feature-item div {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.impact-level {
+  background-color: #ff4444;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  color: white;
+}
+
+/* Modal Styling */
+.history-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
