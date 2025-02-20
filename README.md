@@ -1,4 +1,4 @@
-# ProjectV2 - AI-Driven Secure Web-Based Network Management and Threat Orchestration Platform
+# ProjectV2 - AI-Driven Incident Intrusion Detection Platform
 
 ## Overview
 
@@ -8,7 +8,7 @@
 
 ## Features
 
-- **Real-time Threat Detection**: Powered by machine learning algorithms to detect anomalies in network traffic. **Please note** that the threat detection is simulated in a controlled environment for now.
+- **Real-time Threat Detection**: Powered by machine learning algorithms to detect anomalies in network traffic. **Please note** that the threat detection is simulated in a controlled environment.
 - **Security Orchestration**: Automated responses to detected threats.
 - **Dashboard**: Provides insights and historical data related to detected threats and security status.
 - **User Authentication**: Includes login and signup functionality (JWT-based authentication).
