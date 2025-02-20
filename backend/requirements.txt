@@ -1,9 +1,8 @@
-psycopg2-binary
-SQLAlchemy
-flask
-scikit-learn
-numpy
-pandas
-openvswitch
-paramiko
-gunicorn
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.25
+flask==2.3.2
+scikit-learn==1.3.2
+numpy==1.26.4
+pandas==2.1.4
+paramiko==3.4.0
+gunicorn==21.2.0
